@@ -1,0 +1,22 @@
+{
+  "undefined": {
+    "colors": [
+      "\u001b[31m",
+      "\u001b[32m"
+    ]
+  },
+  "Success": {
+    "name": "Success",
+    "colors": [
+      "\u001b[31m",
+      "\u001b[32m"
+    ]
+  },
+  "Fail": {
+    "name": "Fail",
+    "colors": [
+      "\u001b[31m",
+      "\u001b[31m"
+    ]
+  }
+}
