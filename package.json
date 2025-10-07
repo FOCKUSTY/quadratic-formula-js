@@ -15,10 +15,12 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && pnpm run pkg",
+    "pkg": "pkg -t node*-win-x64 dist/index.js -o ./index.exe"
   },
   "dependencies": {
-    "fock-logger": "^6.0.1"
+    "fock-logger": "^6.0.1",
+    "pkg": "^5.8.1"
   },
   "devDependencies": {
     "@types/node": "^24.7.0",

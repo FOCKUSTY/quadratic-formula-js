@@ -1,8 +1,20 @@
-import Logger, { Colors } from "fock-logger";
+import Configurator from "fock-logger/config";
+import { Colors } from "fock-logger/colors";
+
+new Configurator({
+  logging: false,
+  date: false,
+  create_file: false,
+  colors: [Colors.red, Colors.green],
+  dir: process.env.TEMP || "./"
+})
+
+import Logger from "fock-logger";
 
 const logger = new Logger("Quadrator", {
   date: false,
-  colors: [Colors.red, Colors.green]
+  colors: [Colors.red, Colors.green],
+  logging: false
 });
 
 function discriminant([a, b, c]: [number, number, number]): [number, number] {
